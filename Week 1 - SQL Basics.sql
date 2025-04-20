@@ -148,7 +148,7 @@ WHERE standard_qty IS NULL OR gloss_qty IS NULL OR poster_qty IS NULL
 SELECT DISTINCT account_id, occurred_at
 FROM orders
 WHERE (standard_qty IS NULL OR gloss_qty IS NULL OR poster_qty IS NULL)
-	   AND occurred_at BETWEEN '2016-09-02%' AND '2017-01-02%'
+      AND occurred_at BETWEEN '2016-09-02%' AND '2017-01-02%'
 ORDER BY occurred_at ASC
 
 -- 28. Find list of orders ids where either gloss_qty or poster_qty is greater than 4000. 
